@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhawna Agro</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#f4f7f5;color:#333}
+header{background:#2e7d32;color:#fff;padding:15px 20px}
+.header-container{display:flex;align-items:center;justify-content:center;gap:10px}
+.header-container img{width:60px}
+nav{display:flex;justify-content:center;background:#1b5e20;flex-wrap:wrap}
+nav a{color:white;padding:12px 18px;text-decoration:none;font-weight:500}
+nav a:hover{background:#2e7d32;border-radius:5px}
+.hero{background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') no-repeat center/cover;color:white;text-align:center;padding:100px 20px}
+.hero h1{font-size:48px;margin-bottom:10px}
+.hero p{font-size:18px}
+section{padding:50px 20px;text-align:center}
+section h2{margin-bottom:20px;color:#2e7d32}
+.card-container{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+.card{background:white;width:260px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.1);overflow:hidden;transition:transform 0.3s}
+.card:hover{transform:translateY(-10px)}
+.card img{width:100%;height:180px;object-fit:cover}
+.card h3{margin:10px 0}
+.card p{padding:0 10px 15px}
+.services p{margin:10px 0;font-weight:500}
+.contact{background:#e8f5e9}
+footer{background:#1b5e20;color:white;text-align:center;padding:20px;margin-top:20px}
+button{background:#2e7d32;color:white;border:none;padding:10px 20px;border-radius:5px;cursor:pointer}
+button:hover{background:#1b5e20}
+/* Premium Slider */
+
+.slider{
+    position:relative;
+    width:100%;
+    height:550px;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition:1s;
+}
+
+.slide.active{
+    opacity:1;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    top:50%;
+    left:10%;
+    transform:translateY(-50%);
+    color:white;
+    text-shadow:2px 2px 8px black;
+}
+
+.overlay h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.overlay p{
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.overlay button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.overlay button:hover{
+    background:#1b5e20;
+}
+
+.prev,.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:40px;
+    color:white;
+    cursor:pointer;
+    background:rgba(0,0,0,.4);
+    padding:10px 18px;
+    border-radius:50%;
+    user-select:none;
+}
+
+.prev{left:20px;}
+.next{right:20px;}
+
+.dots{
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    text-align:center;
+}
+
+.dot{
+    display:inline-block;
+    width:14px;
+    height:14px;
+    margin:5px;
+    border-radius:50%;
+    background:white;
+    cursor:pointer;
+}
+
+.dot.active{
+    background:#2e7d32;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <img src="logo.jpeg" alt="Logo">
+    <h1>Bhawna Agro</h1>
+  </div>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#products">Products</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav
+<section id="home">
+
+<section id="home">
+
+<div class="slider">
+
+<div class="slide active">
+<img src="Slide1.jpeg">
+
+<div class="overlay">
+<h1>Welcome to Bhawna Agro</h1>
+<p>Where innovattion,meets agriculture</p>
+
+<a href="#products">
+<button>Order Now</button>
+</a>
+
+</div>
+</div>
+
+<div class="slide">
+<img src="Slide2.jpeg">
+
+<div class="overlay">
+<h1>Quality that grows</h1>
+<p>Premium quality you can taste</p>
+
+</div>
+</div>
+
+<div class="slide">
+<img src="Slide3.jpeg">
+
+<div class="overlay">
+<h1>From farm to family</h1>
+<p>Made with care,delivered with trust</p
+
+</div>
+</div>
+
+<span class="prev">&#10094;</span>
+<span class="next">&#10095;</span>
+
+<div class="dots">
+<span class="dot active"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>At Bhawna Agro, we are committed to providing high-quality organic agricultural products. Our mission is to connect farmers directly with customers and promote healthy living.</p>
+  <p><b>Our Aim:</b> Pure food, happy life 🌱</p>
+</section>
+<section id="products">
+  <h2>Our Products</h2>
+
+  <div class="card-container">
+
+```
+<!-- Honey -->
+<div class="card">
+<a href="Honeynew.jpeg" target="_blank">
+    <img src="Honeynew.jpeg" alt="Pure Honey">
+</a>
+  <h3>Pure Natural Honey</h3>
+  <p>100% Shuddh aur Natural Honey.</p>
+  <p style="font-size:24px;color:green;">
+    <strong>₹399 / 400g</strong>
+  </p>
+  <p>⭐⭐⭐⭐⭐ (4.9/5)</p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScWIjqBzue5D8xJXDl_BEliaK9eV1vcOZntFSFzk1n3PMxvRg/viewform" target="_blank">
+    <button>Order Now</button>
+  </a>
+</div>
+
+<!-- Ghee -->
+<div class="card">
+<a href="Gheenew.jpeg" target="_blank">
+    <img src="Gheenew.jpeg" alt="A2 Desi Ghee">
+</a>
+  <h3>A2 Desi Ghee</h3>
+  <p>Shuddh aur poshtik desi ghee.</p>
+  <p><strong>⭐⭐⭐⭐⭐ 4.8/5</strong></p>
+
+  <label><b>Select Pack Size:</b></label><br><br>
+
+  <select style="padding:10px;width:100%;border-radius:5px;">
+    <option>🥛 1 Litre - ₹2399</option>
+    <option>🥛 5 Litre - ₹10999</option>
+  </select>
+
+  <br><br>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScWIjqBzue5D8xJXDl_BEliaK9eV1vcOZntFSFzk1n3PMxvRg/viewform" target="_blank">
+    <button>Order Now</button>
+  </a>
+</div>
+
+<!-- Spices Combo -->
+<div class="card">
+<a href="spicescombonew.jpeg" target="_blank">
+    <img src="spicescombonew.jpeg" alt="Spices Combo">
+</a>
+
+  <h3>Pure Spices Combo Pack</h3>
+
+  <p>
+    🟡 Turmeric Powder<br>
+    🌶️ Red Chilli Powder<br>
+    🧂 Garam Masala<br>
+    🫚 Ginger Powder<br>
+    🧄 Garlic Powder
+  </p>
+
+  <p style="color:red;"><del>₹1299</del></p>
+
+  <p style="color:orange;font-weight:bold;">
+    🔥 Special Combo Offer
+  </p>
+
+  <p style="font-size:24px;color:green;">
+    <strong>₹999 / Combo Pack</strong>
+    <strong>(5 in 1)500g</strong>
+  </p>
+
+  <p>⭐⭐⭐⭐⭐ (4.9/5)</p>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScWIjqBzue5D8xJXDl_BEliaK9eV1vcOZntFSFzk1n3PMxvRg/viewform" target="_blank">
+    <button>Order Now</button>
+  </a>
+</div>
+```
+
+  </div>
+</section>
+
+    <button style="background:#2e7d32;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;"
+<button onclick="document.getElementById('orderForm').style.display='block'">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScWIjqBzue5D8xJXDl_BEliaK9eV1vcOZntFSFzk1n3PMxvRg/viewform" target="_blank">
+</a>
+</div>
+
+    <br><br>
+<button type="button" onclick="document.getElementById('commentBox').style.display='block';">
+    Write a Comment
+</button>
+
+<div id="commentBox" style="display:none; margin-top:10px;">
+    <textarea placeholder="Write your comment here..."
+    style="width:100%; height:80px;"></textarea>
+
+    <br><br>
+
+    <button onclick="alert('Thank you for your feedback!')">
+        Submit Comment
+    </button>
+</div>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <p>✔ Farm to Home Delivery</p>
+  <p>✔ Bulk Orders Available</p>
+  <p>✔ 100% Quality Guarantee</p>
+</section>
+
+<footer>
+  <p>© 2026 Bhawna Agro | All Rights Reserved</p>
+</footer>
+<script>
+
+let slides=document.querySelectorAll(".slide");
+let dots=document.querySelectorAll(".dot");
+
+let current=0;
+
+function showSlide(index){
+
+slides.forEach(s=>s.classList.remove("active"));
+dots.forEach(d=>d.classList.remove("active"));
+
+slides[index].classList.add("active");
+dots[index].classList.add("active");
+
+current=index;
+
+}
+
+document.querySelector(".next").onclick=function(){
+
+current++;
+
+if(current>=slides.length) current=0;
+
+showSlide(current);
+
+}
+
+document.querySelector(".prev").onclick=function(){
+
+current--;
+
+if(current<0) current=slides.length-1;
+
+showSlide(current);
+
+}
+
+dots.forEach((dot,index)=>{
+
+dot.onclick=function(){
+
+showSlide(index);
+
+}
+
+});
+
+setInterval(function(){
+
+current++;
+
+if(current>=slides.length) current=0;
+
+showSlide(current);
+
+},4000);
+
+</script>
+</body>
+</html>
